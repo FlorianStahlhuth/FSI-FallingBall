@@ -75,7 +75,7 @@
 #include <iomanip>
 // Options
 #ifndef COLLECT_RESULTS
-#define COLLECT_RESULTS 1   // Set to 1 for creation of result files
+#define COLLECT_RESULTS 0   // Set to 1 for creation of result files
 #endif
 // At the end of this top-matter, we import
 // all deal.II names into the global
