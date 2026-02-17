@@ -5,3 +5,9 @@ The underlying open-source finite element library is <br/>
 https://dealii.org <br/>
 The latest version of this code is based on deal.II version 9.6.2 (Feb 2026).
 
+After installing deal.II, the code is run as in the deal.II tutorials:
+```
+cmake .
+make run 
+```
+
