@@ -1,0 +1,43 @@
+# Listing of Parameters
+# Florian Stahlhuth
+# February 2026
+# -------------------------------
+subsection Global
+  # degree of finite elements
+  set degree = 2
+
+  # uniform mesh refinement
+  set no_of_refinements = 0
+end
+
+subsection inflow_velocity_parameter
+  # inlet velocity 
+  set inflow_velocity = 0
+end
+
+subsection Physical constants
+  # Fluid parameters 
+  set density_fluid     = 1.141e+3
+  set viscosity         = 7.0114e-5
+
+  # Solid parameters 
+  set density_structure = 1.361e+3
+
+  set lame_coefficient_mu = 20e+3
+  set poisson_ratio_nu    = 0.4
+  set force_structure_x   = 0.0
+  set force_structure_y   = -9.81
+  
+  # Mesh motion control parameter
+  set alpha_u = 1.0e-8  
+end
+
+subsection Timestepping schemes & timestep & max_no_timesteps
+  # Timestepping schemes
+  # BE, CN or CN_shifted
+  set time_stepping_scheme = CN_shifted
+
+  set timestep = 1.0e-3
+
+  set max_no_timesteps = 600
+end
